@@ -1,14 +1,13 @@
-def merge(a,b):
-    new_list=[]
-    for i in a:
-        new_list.append(i)
-    for j in b:
-        new_list.append(j)
-    return new_list,len(new_list)
+import random
 
-a=["handong","global","university"]
-b=[3,8,1,5]
+originNumber=[]
 
-new_list,length=merge(a,b)
-print("두 리스트를 병합한 결과는",new_list)
-print("리스트의 길이는",length)
+for i in range(3):
+    originNumber.append(random.randrange(1,9))
+
+print(originNumber)
+
+for i in range(5):
+    originNumber.append(random.randrange(10,100,5))
+
+print(originNumber)
