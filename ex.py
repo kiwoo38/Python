@@ -1,13 +1,18 @@
 import random
 
-originNumber=[]
+namelist=[]
+oxlist=[]
 
-for i in range(3):
-    originNumber.append(random.randrange(1,9))
+count=int(input("인원을 입력하세요: "))
 
-print(originNumber)
+for i in range(count):
+    name=input("이름을 입력하세요: ")
+    namelist.append(name)
+for i in range(count):
+    oxlist.append(random.choice(["o","x"]))
 
-for i in range(5):
-    originNumber.append(random.randrange(10,100,5))
+tname=tuple(namelist)
+print(tname)
 
-print(originNumber)
+t=list(zip(tname,oxlist))
+print(t)
